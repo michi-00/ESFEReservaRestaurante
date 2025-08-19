@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ESFE.ReservaRestaurante"
         mc:Ignorable="d"
-        Title="CRUDReserva" Height="450" Width="800">
+        Title="CRUDReserva" Height="677" Width="1050">
     <Grid>
-        
+        <Label Content="ID" HorizontalAlignment="Left" Height="52" Margin="334,5,0,0" VerticalAlignment="Top" Width="106"/>
+        <TextBox x:Name="___TexID_" HorizontalAlignment="Left" Margin="334,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" Height="36"/>
+        <Label Content="Reserva" HorizontalAlignment="Left" Margin="525,11,0,0" VerticalAlignment="Top" Width="119" Height="40"/>
+        <TextBox
+        Width="186" VerticalAlignment="Top" TextWrapping="Wrap" x:Name="___TexNombre_" Margin="514,106,0,0" Height="28" HorizontalAlignment="Left" Text="Ingrese el Número de personas "/>
+        <TextBox x:Name="___TexNombre_" HorizontalAlignment="Left" Margin="525,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" Height="28"/>
+        <TextBox x:Name="___TexEstado_" HorizontalAlignment="Left" Margin="788,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" Height="26" RenderTransformOrigin="0.508,0.578" Text="Escriba el estado "/>
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="30,407,52,27"/>
+        <Button x:Name="___BtnGuardar_" Content="MODIFICAR" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="120"/>
+        <Button x:Name="___BtnModificar_" Content="ELIMINAR" HorizontalAlignment="Left" Margin="730,0,0,0" VerticalAlignment="Center" Height="40" Width="142"/>
+        <Button x:Name="___BtnEliminar_" Content="GUARDAR" HorizontalAlignment="Left" Height="40" Margin="169,0,0,0" VerticalAlignment="Center" Width="123"/>
+        <Calendar HorizontalAlignment="Left" Margin="61,133,0,0" VerticalAlignment="Top" Height="155"/>
+        <Label Content="Selecciones la fecha " HorizontalAlignment="Left" Margin="61,107,0,0" VerticalAlignment="Top" Width="192"/>
+        <Label Content="Selecciones la Hora" HorizontalAlignment="Left" Margin="334,145,0,0" VerticalAlignment="Top" Width="133"/>
+
     </Grid>
 </Window>

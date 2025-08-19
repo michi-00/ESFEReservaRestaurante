@@ -1,0 +1,19 @@
+﻿<Window x:Class="ESFE.ReservaRestaurante.CRUDRol"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ESFE.ReservaRestaurante"
+        mc:Ignorable="d"
+        Title="CRUDRol" Height="866" Width="1329">
+    <Grid>
+        <TextBox x:Name="___TexID_" HorizontalAlignment="Left" Height="30" Margin="130,161,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="___TexNombre_" HorizontalAlignment="Left" Margin="417,161,0,0" TextWrapping="Wrap" Text="Ingrese el nombre del Rol" VerticalAlignment="Top" Width="187" Height="45"/>
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="46,425,48,61"/>
+        <Button x:Name="___BtnGuradar_" Content="GUARDAR" HorizontalAlignment="Left" Margin="88,350,0,0" VerticalAlignment="Top" Height="40" Width="163"/>
+        <Button x:Name="___BtnModificar_" Content="MODIFICAR" HorizontalAlignment="Left" Margin="490,350,0,0" VerticalAlignment="Top" Height="40" Width="160"/>
+        <Button x:Name="___BtnEliminar_" Content="ELIMINAR" HorizontalAlignment="Left" Margin="874,350,0,0" VerticalAlignment="Top" Width="159" Height="40"/>
+        <Label Content="ROL" HorizontalAlignment="Left" Margin="417,42,0,0" VerticalAlignment="Top" Width="153" Height="38"/>
+
+    </Grid>
+</Window>

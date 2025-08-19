@@ -77,6 +77,9 @@
     <Compile Include="CRUDReserva.xaml.cs">
       <DependentUpon>CRUDReserva.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CRUDRol.xaml.cs">
+      <DependentUpon>CRUDRol.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
@@ -118,6 +121,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="CRUDReserva.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CRUDRol.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
