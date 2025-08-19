@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ReservaRestauranteEN
 {
-    public class Class1
+    public class LugarEN
     {
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public string Descripcion { get; set; }
     }
 }

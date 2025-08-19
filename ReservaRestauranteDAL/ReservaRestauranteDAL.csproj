@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{233C4A17-F9C3-4975-97D2-0548B2887928}</ProjectGuid>
+    <ProjectGuid>{6AE14184-64A5-4BA6-9A6C-D30D49DD1BA4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ReservaRestauranteEN</RootNamespace>
-    <AssemblyName>ReservaRestauranteEN</AssemblyName>
+    <RootNamespace>ReservaRestauranteDAL</RootNamespace>
+    <AssemblyName>ReservaRestauranteDAL</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -58,20 +58,26 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClienteEN.cs" />
-    <Compile Include="CobroEN.cs" />
-    <Compile Include="EmpleadoEN.cs" />
-    <Compile Include="LugarEN.cs" />
-    <Compile Include="MenuEN.cs" />
-    <Compile Include="MesaEN.cs" />
-    <Compile Include="PersonaEN.cs" />
+    <Compile Include="ClienteDAL.cs" />
+    <Compile Include="CobroDAL.cs" />
+    <Compile Include="ComunBD.cs" />
+    <Compile Include="EmpleadoDAL.cs" />
+    <Compile Include="LugarDAL.cs" />
+    <Compile Include="MenuDAL.cs" />
+    <Compile Include="MesaDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReservaEN.cs" />
-    <Compile Include="RolEN.cs" />
-    <Compile Include="UsuarioEN.cs" />
+    <Compile Include="ReservaDAL.cs" />
+    <Compile Include="RolDAL.cs" />
+    <Compile Include="UsuarioDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ReservaRestauranteEN\ReservaRestauranteEN.csproj">
+      <Project>{233c4a17-f9c3-4975-97d2-0548b2887928}</Project>
+      <Name>ReservaRestauranteEN</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
