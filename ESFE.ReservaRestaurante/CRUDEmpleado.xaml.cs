@@ -11,27 +11,17 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using ReservaRestauranteEN;
-using ReservaRestauranteBL;
 
 namespace ESFE.ReservaRestaurante
 {
     /// <summary>
-    /// Lógica de interacción para Login.xaml
+    /// Lógica de interacción para CRUDEmpleado.xaml
     /// </summary>
-    public partial class Login : Window
+    public partial class CRUDEmpleado : Window
     {
-        public Login()
+        public CRUDEmpleado()
         {
             InitializeComponent();
-
-        }
-
-
-
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
         }
     }
 }

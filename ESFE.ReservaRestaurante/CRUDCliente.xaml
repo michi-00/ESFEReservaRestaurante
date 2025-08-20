@@ -1,0 +1,23 @@
+﻿<Window x:Class="ESFE.ReservaRestaurante.CRUDCliente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ESFE.ReservaRestaurante"
+        mc:Ignorable="d"
+        Title="CRUDCliente" Height="777" Width="1468">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/cliente (2).png"/>
+        </Grid.Background>
+        <DataGrid x:Name="dgMostrarCliente" HorizontalAlignment="Center" Height="273" Margin="0,478,0,0" VerticalAlignment="Top" Width="1398" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="36" Margin="146,217,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="54"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="54" Margin="276,262,0,0" TextWrapping="Wrap" Text="Ingrese el nombre del cliente" VerticalAlignment="Top" Width="210"/>
+        <TextBox x:Name="txtTelefono" HorizontalAlignment="Left" Height="54" Margin="620,262,0,0" TextWrapping="Wrap" Text="Ingrese el número de teléfono" VerticalAlignment="Top" Width="246"/>
+        <TextBox x:Name="txtDireccion" HorizontalAlignment="Left" Height="54" Margin="972,262,0,0" TextWrapping="Wrap" Text="Ingrese la dirección" VerticalAlignment="Top" Width="234"/>
+        <Button x:Name="btnGuardar" Content="GUARDAR" HorizontalAlignment="Left" Height="67" Margin="184,381,0,0" VerticalAlignment="Top" Width="222"/>
+        <Button x:Name="btnEliminar" Content="ELIMINAR" HorizontalAlignment="Center" Height="67" Margin="0,381,0,0" VerticalAlignment="Top" Width="246"/>
+        <Button x:Name="btnModificar" Content="MODIFICAR" HorizontalAlignment="Left" Height="67" Margin="1026,381,0,0" VerticalAlignment="Top" Width="238"/>
+
+    </Grid>
+</Window>

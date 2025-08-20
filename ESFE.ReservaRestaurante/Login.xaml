@@ -5,8 +5,66 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ESFE.ReservaRestaurante"
         mc:Ignorable="d"
-        Title="Login" Height="450" Width="800">
-    <Grid>
-        
+        Title="Login" Height="607" Width="1143">
+    <Grid Margin="0,0,0,-6">
+        <Grid.Background>
+            <ImageBrush ImageSource="/login.png" Stretch="Fill" TileMode="None"/>
+        </Grid.Background>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="48" Margin="681,221,0,0" TextWrapping="Wrap" Text=" Username" VerticalAlignment="Top" Width="331" FontFamily="Cooper Black" FontSize="24">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF9EA41"/>
+                    <GradientStop Color="#FFA9E86E" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <PasswordBox x:Name="pbClave" HorizontalAlignment="Left" Height="46" Margin="681,288,0,0" VerticalAlignment="Top" Width="331" Password="     Password" FontFamily="Cooper Black" FontSize="22" PasswordChar="*">
+            <PasswordBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE4F543"/>
+                    <GradientStop Color="#FFA9E86E" Offset="1"/>
+                </LinearGradientBrush>
+            </PasswordBox.Background>
+        </PasswordBox>
+        <Button x:Name="btnAcceder" Content="ACCEDER" HorizontalAlignment="Left" Height="48" Margin="681,430,0,0" VerticalAlignment="Top" Width="331" FontFamily="Cooper Black" FontSize="24">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF3C319"/>
+                    <GradientStop Color="#FFCC322B" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <ComboBox x:Name="cbRol" HorizontalAlignment="Left" Height="44" Margin="681,356,0,0" VerticalAlignment="Top" Width="331" FontFamily="Cooper Black" FontSize="24">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE4F543"/>
+                    <GradientStop Color="#FFA9E86E" Offset="1"/>
+                    <GradientStop Color="#FFA9E86E" Offset="0.95"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ComboBoxItem x:Name="Administrador"/>
+            <ComboBoxItem x:Name="Empleado"/>
+        </ComboBox>
+        <Button x:Name="btnCerrar" Content="CERRAR" HorizontalAlignment="Left" Height="39" Margin="716,484,0,0" VerticalAlignment="Top" Width="272" RenderTransformOrigin="0.5,0.5" FontFamily="Cooper Black" FontSize="18">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFD12D"/>
+                    <GradientStop Color="#FFE25621" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="1.273"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.728"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="34" Margin="981,296,0,0" VerticalAlignment="Top" Width="31" Source="/cerrar-con-llave.png" RenderTransformOrigin="0.667,0.236"/>
+        <Image HorizontalAlignment="Left" Height="46" Margin="1017,288,0,0" VerticalAlignment="Top" Width="50" Source="/ojo.png"/>
+
+
+
     </Grid>
 </Window>

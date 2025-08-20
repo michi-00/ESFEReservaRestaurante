@@ -74,14 +74,38 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CRUDCliente.xaml.cs">
+      <DependentUpon>CRUDCliente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDCobro.xaml.cs">
+      <DependentUpon>CRUDCobro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDEmpleado.xaml.cs">
+      <DependentUpon>CRUDEmpleado.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDLugar.xaml.cs">
+      <DependentUpon>CRUDLugar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDMenu.xaml.cs">
+      <DependentUpon>CRUDMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDMesa.xaml.cs">
+      <DependentUpon>CRUDMesa.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CRUDReserva.xaml.cs">
       <DependentUpon>CRUDReserva.xaml</DependentUpon>
     </Compile>
     <Compile Include="CRUDRol.xaml.cs">
       <DependentUpon>CRUDRol.xaml</DependentUpon>
     </Compile>
+    <Compile Include="InicioEmpleado.xaml.cs">
+      <DependentUpon>InicioEmpleado.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -120,6 +144,30 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="CRUDCliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CRUDCobro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CRUDEmpleado.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CRUDLugar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CRUDMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CRUDMesa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CRUDReserva.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -128,10 +176,60 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="InicioEmpleado.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="crud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="empleado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cliente %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="mesa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="lugar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cobro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cerrar-con-llave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ojo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Inicio.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

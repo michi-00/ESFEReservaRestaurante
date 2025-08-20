@@ -5,15 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ESFE.ReservaRestaurante"
         mc:Ignorable="d"
-        Title="CRUDRol" Height="866" Width="1329">
+        Title="CRUDRol" Height="777" Width="1468">
     <Grid>
-        <TextBox x:Name="___TexID_" HorizontalAlignment="Left" Height="30" Margin="130,161,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="40"/>
-        <TextBox x:Name="___TexNombre_" HorizontalAlignment="Left" Margin="417,161,0,0" TextWrapping="Wrap" Text="Ingrese el nombre del Rol" VerticalAlignment="Top" Width="187" Height="45"/>
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="46,425,48,61"/>
-        <Button x:Name="___BtnGuradar_" Content="GUARDAR" HorizontalAlignment="Left" Margin="88,350,0,0" VerticalAlignment="Top" Height="40" Width="163"/>
-        <Button x:Name="___BtnModificar_" Content="MODIFICAR" HorizontalAlignment="Left" Margin="490,350,0,0" VerticalAlignment="Top" Height="40" Width="160"/>
-        <Button x:Name="___BtnEliminar_" Content="ELIMINAR" HorizontalAlignment="Left" Margin="874,350,0,0" VerticalAlignment="Top" Width="159" Height="40"/>
-        <Label Content="ROL" HorizontalAlignment="Left" Margin="417,42,0,0" VerticalAlignment="Top" Width="153" Height="38"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="/crud.png"/>
+        </Grid.Background>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="30" Margin="374,195,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Margin="796,187,0,0" TextWrapping="Wrap" Text="Ingrese el nombre del Rol" VerticalAlignment="Top" Width="188" Height="46"/>
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="66,430,40,10"/>
+        <Button x:Name="btnGuradar" Content="GUARDAR" HorizontalAlignment="Left" Margin="228,341,0,0" VerticalAlignment="Top" Height="40" Width="162"/>
+        <Button x:Name="btnModificar" Content="MODIFICAR" HorizontalAlignment="Left" Margin="630,341,0,0" VerticalAlignment="Top" Height="40" Width="160"/>
+        <Button x:Name="btnEliminar" Content="ELIMINAR" HorizontalAlignment="Left" Margin="1014,341,0,0" VerticalAlignment="Top" Width="158" Height="40"/>
 
     </Grid>
 </Window>

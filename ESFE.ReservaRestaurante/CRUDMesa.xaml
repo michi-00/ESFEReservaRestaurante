@@ -1,0 +1,24 @@
+﻿<Window x:Class="ESFE.ReservaRestaurante.CRUDMesa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ESFE.ReservaRestaurante"
+        mc:Ignorable="d"
+        Title="CRUDMesa" Height="777" Width="1468">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/mesa.png"/>
+        </Grid.Background>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="39" Margin="93,224,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="57"/>
+        <TextBox x:Name="txtNumero" HorizontalAlignment="Left" Height="60" Margin="243,244,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="264"/>
+        <TextBox x:Name="txtCapacidad" HorizontalAlignment="Left" Margin="567,244,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="222" Height="60"/>
+        <TextBox x:Name="txtEstado" HorizontalAlignment="Left" Height="60" Margin="899,244,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="201"/>
+        <TextBox x:Name="txtIdLugar" HorizontalAlignment="Left" Height="60" Margin="1186,244,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="159"/>
+        <Button x:Name="bntGuardar" Content="GUARDAR" HorizontalAlignment="Left" Height="70" Margin="260,332,0,0" VerticalAlignment="Top" Width="218"/>
+        <Button x:Name="btnEliminar" Content="ELIMINAR" HorizontalAlignment="Left" Height="70" Margin="618,332,0,0" VerticalAlignment="Top" Width="200"/>
+        <Button x:Name="btnModificar" Content="MODIFICAR" HorizontalAlignment="Left" Height="70" Margin="954,332,0,0" VerticalAlignment="Top" Width="166"/>
+        <DataGrid HorizontalAlignment="Left" Height="315" Margin="62,436,0,0" VerticalAlignment="Top" Width="1366" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+
+    </Grid>
+</Window>
