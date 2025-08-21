@@ -1,0 +1,86 @@
+﻿<Window x:Class="ESFE.ReservaRestaurante.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ESFE.ReservaRestaurante"
+        mc:Ignorable="d"
+        Title="Login" Height="607" Width="1143">
+    <Grid Margin="0,0,0,-6">
+        <Grid.Background>
+            <ImageBrush ImageSource="/img/login.png"/>
+        </Grid.Background>
+
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="40" Margin="714,201,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="255" FontFamily="Cooper Black" FontSize="24">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF9EA41"/>
+                    <GradientStop Color="#FFA9E86E" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <PasswordBox x:Name="pbClave" HorizontalAlignment="Left" Height="39" Margin="714,287,0,0" VerticalAlignment="Top" Width="255" FontFamily="Cooper Black" FontSize="22" PasswordChar="*">
+            <PasswordBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE4F543"/>
+                    <GradientStop Color="#FFA9E86E" Offset="1"/>
+                </LinearGradientBrush>
+            </PasswordBox.Background>
+        </PasswordBox>
+        <Button x:Name="btnAcceder" Content="ACCEDER" HorizontalAlignment="Left" Height="40" Margin="714,451,0,0" VerticalAlignment="Top" Width="255" FontFamily="Cooper Black" FontSize="24">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF3C319"/>
+                    <GradientStop Color="#FFCC322B" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <ComboBox x:Name="cbRol" HorizontalAlignment="Left" Height="38" Margin="714,383,0,0" VerticalAlignment="Top" Width="255" FontFamily="Cooper Black" FontSize="24">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE4F543"/>
+                    <GradientStop Color="#FFA9E86E" Offset="1"/>
+                    <GradientStop Color="#FFA9E86E" Offset="0.95"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ComboBoxItem>Administrador</ComboBoxItem>
+            <ComboBoxItem>Empleado
+            </ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="btnCerrar" Content="CERRAR" HorizontalAlignment="Left" Height="33" Margin="741,497,0,0" VerticalAlignment="Top" Width="210" RenderTransformOrigin="0.5,0.5" FontFamily="Cooper Black" FontSize="18">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFD12D"/>
+                    <GradientStop Color="#FFE25621" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="1.147"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.728"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label x:Name="lblClave" Content="Password" HorizontalAlignment="Left" Margin="714,245,0,0" VerticalAlignment="Top" Height="54" Width="234" FontFamily="Broadway" FontSize="36"/>
+        <Label x:Name="lblRol" Content="Rol" HorizontalAlignment="Left" Margin="714,331,0,0" VerticalAlignment="Top" Height="41" Width="150" FontFamily="Broadway" FontSize="36"/>
+        <Label x:Name="lblNombre" Content="Username" HorizontalAlignment="Left" Margin="714,149,0,0" VerticalAlignment="Top" Height="52" Width="280" FontFamily="Elephant" FontSize="36"/>
+        <Button x:Name="btnMostrar" Content="" HorizontalAlignment="Left" Height="53" Margin="974,282,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1"/>
+                    <SkewTransform AngleX="1.035"/>
+                    <RotateTransform Angle="0.043"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush ImageSource="/img/ojo.png" Stretch="Fill" TileMode="Tile"/>
+            </Button.Background>
+        </Button>
+
+
+
+    </Grid>
+</Window>

@@ -70,8 +70,5 @@
     <Compile Include="RolEN.cs" />
     <Compile Include="UsuarioEN.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

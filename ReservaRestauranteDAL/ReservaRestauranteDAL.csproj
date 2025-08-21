@@ -71,9 +71,6 @@
     <Compile Include="UsuarioDAL.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\ReservaRestauranteEN\ReservaRestauranteEN.csproj">
       <Project>{233c4a17-f9c3-4975-97d2-0548b2887928}</Project>
       <Name>ReservaRestauranteEN</Name>
